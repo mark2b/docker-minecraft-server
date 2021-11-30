@@ -26,7 +26,7 @@ RUN apk --no-cache add \
 
 # Install Java
 RUN apk --no-cache add -X http://dl-cdn.alpinelinux.org/alpine/edge/testing \
-    openjdk16-jre
+    openjdk17-jre
 
 # Install the latest Minecraft server
 RUN set -x; export RANDVERSION=$(echo $((1 + $RANDOM % 4000))); wget --quiet --no-check-certificate \
